@@ -1,5 +1,5 @@
 /*
-Theme Name: Baxter Child
+Theme Name: Salient Child
 Theme URI: http://hypercoder.co
 Author: Azizul Haque
 Author URI: http://hypercoder.co
@@ -9,3 +9,101 @@ Version: 8.1.0
 License: GNU General Public License version 3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 */
+.container-wrap {
+	margin-top: 0;
+    padding-top: 0;
+}
+@media (max-width: 999px) {
+	.container-wrap{
+	padding-top:35px !important;
+}
+}
+#header-secondary-outer{
+display:none;
+}
+@media only screen and (min-width: 767px){
+	#header-outer {
+    top: 0px !important;
+}
+}
+
+@media only screen and (max-width: 767px){
+	#header-secondary-outer{
+		display:block;
+		}
+}
+#header-secondary-outer nav >ul >li >a{
+	border:0 !important;
+	font-size:18px !important;
+	font-weight:bold;
+	color:#39C1CD;
+}
+#header-secondary-outer nav >ul >li >a i{
+	font-size:18px;
+	font-weight:bold;
+	color:#39C1CD;
+}
+
+/*css for door*/
+.filter-wrapper__parent.door-filter ul {
+    text-align: center;
+    margin-bottom: 0;
+}
+.filter-wrapper__parent.door-filter ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.filter-wrapper__child.door-filter {
+    text-align: center;
+    margin-top: 20px;
+}
+.filter-wrapper__child.door-filter li {
+    border: 2px solid #000;
+    margin: 5px;
+    display: inline-block;
+    list-style: none;
+    cursor: pointer;
+    padding: 5px 20px;
+}
+.filter-wrapper__child.door-filter li.bold {
+    background-color: #000;
+    color:#fff;
+}
+#load-door-images ul.door_gallery li p{
+    margin-top: 20px;
+    text-transform: uppercase;
+    color: #000;
+    padding-bottom: 0;
+}
+#load-door-images ul.door_gallery {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(32%, 1fr));
+    grid-gap: 20px;
+    margin-left: 0;
+}
+#load-door-images {
+    margin-top: 50px;
+}
+#load-door-images ul.door_gallery li {
+    background: #ddd;
+    list-style: none;
+    padding: 40px;
+}
+#load-door-images ul.door_gallery li img {
+    max-width: 100%;
+    height: auto;
+}
+div#ajax-content-wrap .row{
+    justify-content: center;
+}
+@media only screen and (max-width: 768px) {
+    #load-door-images ul.door_gallery {
+        grid-template-columns: repeat(2, minmax(50%, 1fr));
+    }
+}
+
+
